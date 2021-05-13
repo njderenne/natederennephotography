@@ -12,6 +12,15 @@ function Wildlife(props) {
 		currentCategory,
 	} = props
 
+	const imageArray = [
+		{location: 'Wildlife/Tiles/IMG_3036.jpg'},
+		{location: 'Wildlife/Tiles/IMG_3037.JPG'},
+		{location: 'Wildlife/Tiles/IMG_3046.JPG'},
+		{location: 'Wildlife/Tiles/IMG_3059.JPG'},
+		{location: 'Wildlife/Tiles/IMG_3288.JPG'},
+		{location: 'Wildlife/Tiles/West_19.jpg'}
+]
+
     return (
         <div>
 			<header className='hero-wildlife' id='hero'>
@@ -32,7 +41,9 @@ function Wildlife(props) {
 					<i className='arrow down'></i>
 				</div>
 			</header>
-			<PictureTiles />
+			<PictureTiles
+				imageArray={imageArray}
+			/>
 			<Footer />
 		</div>
     )

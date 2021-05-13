@@ -138,6 +138,8 @@ code {
 
 .tile-columns {
   display: grid;
+  margin-left: 2vw;
+  margin-top: 10vh;
   grid-template-columns: auto auto auto;
 }
 
@@ -145,16 +147,25 @@ code {
   color: #cc6500;
   grid-column: 1;
   grid-row: 1;
+  margin-top: 2vh;
 }
 
 .image-1 {
   color: #007bb5;
   grid-column: 2;
   grid-row: 1;
+  margin-top: 2vh;
 }
 
 .image-2 {
   color: #fff;
   grid-column: 3;
   grid-row: 1;
+  margin-top: 2vh;
+}
+
+.tile-image {
+  width: 30vw;
+  object-fit: fill;
+  cursor: pointer;
 }

@@ -12,6 +12,15 @@ function Landscape(props) {
 		currentCategory,
 	} = props
 
+    const imageArray = [
+        {location: 'Landscape/Tiles/IMG_4770.png'},
+        {location: 'Landscape/Tiles/IMG_5329.jpg'},
+        {location: 'Landscape/Tiles/IMG_5507.jpg'},
+        {location: 'Landscape/Tiles/West_19-6.jpg'},
+        {location: 'Landscape/Tiles/West_19-7.jpg'},
+        {location: 'Landscape/Tiles/West_19-17.jpg'}
+    ]
+
     return (
         <div>
             <header className='hero-landscape' id='hero'>
@@ -32,7 +41,9 @@ function Landscape(props) {
                     <i className='arrow down'></i>
                 </div>
             </header>
-            <PictureTiles />
+            <PictureTiles
+                imageArray={imageArray}
+            />
             <Footer />
         </div>
     )

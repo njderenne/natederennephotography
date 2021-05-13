@@ -1,23 +1,22 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-function PictureTiles() {
-    const testArray = [
-        'Hello0',
-        'Hello1',
-        'Hello2',
-        'Hello3',
-        'Hello4',
-        'Hello5',
-        'Hello6'
-    ]
+function PictureTiles(props) {
+    const {imageArray} = props
 
     return(
         <div className="tile-columns">
-            {testArray.map((item, i) => {
+            {imageArray.map((image, i) => {
                     return( 
                         <div>
-                            <p className={`white image-${i%3}`}>{item}</p>
+                            <img 
+                            src={require(`../../Assests/${image.location}`).default} 
+                            className={`tile-image image-${i%3}`}
+                            // alt={project.title}
+                            // onClick={() => toggleModal(project, i)}
+                            key={i}
+                        />
+                            {/* <p className={`white image-${i%3}`}>{item}</p> */}
                         </div>
                     )
             })}

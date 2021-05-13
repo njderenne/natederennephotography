@@ -11,6 +11,16 @@ function Portrait(props) {
 		currentCategory,
 	} = props
 
+
+	const imageArray = [
+		{location: 'Portrait/Tiles/149A7522.jpg'},
+		{location: 'Portrait/Tiles/Exercise_3_nate_derenne-5.jpg'},
+		{location: 'Portrait/Tiles/Matthew_b_w.jpg'},
+		{location: 'Portrait/Tiles/ND0_7898-16.jpg'},
+		{location: 'Portrait/Tiles/USMC_Ball_19-4.jpg'},
+		{location: 'Portrait/Tiles/Z_and_I.jpg'}
+	]
+
 	return (
 		<div>
 			<header className='hero-portrait' id='hero'>
@@ -31,7 +41,9 @@ function Portrait(props) {
 					<i className='arrow down'></i>
 				</div>
 			</header>
-			<PictureTiles />
+			<PictureTiles
+				imageArray={imageArray}
+			/>
 			<Footer />
 		</div>
 	)
