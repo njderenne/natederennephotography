@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <div>
-            <h5>2021 Nate Derenne Photography</h5>
+            <h5 className="white">2021 Nate Derenne Photography</h5>
         </div>
     )
 

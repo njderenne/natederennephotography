@@ -41,43 +41,55 @@ function App() {
     switch(currentCategory.name) {
       case 'Home':
         return <div>
-            <Nav 
+            {/* <Nav 
+              categories={categories}
+              setCurrentCategory={setCurrentCategory}
+              currentCategory={currentCategory}
+            /> */}
+            <Home 
               categories={categories}
               setCurrentCategory={setCurrentCategory}
               currentCategory={currentCategory}
             />
-            <Home />
-            <Footer />
           </div>
       case 'Landscape':
         return <div>
-            <Nav
+            {/* <Nav
                 categories={categories}
                 setCurrentCategory={setCurrentCategory}
                 currentCategory={currentCategory}
-            ></Nav>
-            <Landscape />
-            <Footer />
+            ></Nav> */}
+            <Landscape 
+              categories={categories}
+              setCurrentCategory={setCurrentCategory}
+              currentCategory={currentCategory}
+            />
           </div>
       case 'Wildlife':
         return <div>
-            <Nav
+            {/* <Nav
                 categories={categories}
                 setCurrentCategory={setCurrentCategory}
                 currentCategory={currentCategory}
-            ></Nav>
-            <Wildlife />
-            <Footer />
+            ></Nav> */}
+            <Wildlife 
+              categories={categories}
+              setCurrentCategory={setCurrentCategory}
+              currentCategory={currentCategory}
+            />
           </div>
       case 'Portrait':
         return <div>
-            <Nav
+            {/* <Nav
                 categories={categories}
                 setCurrentCategory={setCurrentCategory}
                 currentCategory={currentCategory}
-            ></Nav>
-            <Portrait />
-            <Footer />
+            ></Nav> */}
+            <Portrait 
+              categories={categories}
+              setCurrentCategory={setCurrentCategory}
+              currentCategory={currentCategory}
+            />
           </div>
       default:
         return
